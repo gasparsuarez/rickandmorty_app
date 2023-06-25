@@ -1,4 +1,4 @@
-### Aplicación de Rick & Morty
+### Aplicación de Rick & Morty (En construcción)
 
 Esta aplicación de Rick & Morty tiene como objetivo proporcionar información detallada sobre los personajes y las localidades presentes en la serie. Las características principales de la aplicación incluyen:
 
@@ -9,6 +9,8 @@ Esta aplicación de Rick & Morty tiene como objetivo proporcionar información d
   * Listado de todas las localidades con sus respectivos habitantes: La aplicación proporcionará una lista de todas las localidades presentes en la serie, junto con información sobre los habitantes que residen en cada una de ellas.
 
 ### Estructura 
+
+Para desarrollar esta aplicación, se utilizarán las siguientes tecnologías y enfoques:
 
   * Navegación con GoRouter.
   * Patrón BLoC y Flutter Bloc.
