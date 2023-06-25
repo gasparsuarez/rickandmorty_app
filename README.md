@@ -7,10 +7,25 @@ Esta aplicación de Rick & Morty tiene como objetivo proporcionar información d
   * Pantalla con detalles y otras características de los personajes: Al seleccionar un personaje de la lista, la aplicación mostrará una pantalla de detalles que incluirá información adicional como la especie, origen, estado, entre otros atributos relevantes.
 
   * Listado de todas las localidades con sus respectivos habitantes: La aplicación proporcionará una lista de todas las localidades presentes en la serie, junto con información sobre los habitantes que residen en cada una de ellas.
+
 ### Estructura 
 
-  * Navegación con GoRouter
-  * Patrón BLoC y Flutter Bloc
-  * Inyección de dependencias
-  * Aplicación de principios S.O.L.I.D
-  * Arquitectura hexagonal con tecnicas de arquitectura Limpia
+  * Navegación con GoRouter.
+  * Patrón BLoC y Flutter Bloc.
+  * Inyección de dependencias.
+  * Aplicación de principios S.O.L.I.D.
+  * Arquitectura hexagonal con tecnicas de arquitectura limpia.
+
+### Información de la API
+
+ * [Rick & Morty Free API](https://rickandmortyapi.com/)
+
+### Imágenes
+
+<img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/aeae695e-4ff3-47c2-a48e-6d5f733eb9b4" width="250">
+<img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/bb64f2b5-fb3a-45a1-9ef8-340e8b81af01" width="250">
+<img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/87f3a5cc-3f65-4d89-95e2-3d3c1a634c32" width="250">
+<img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/5e3922fa-8750-4108-a319-4103540d6114" width="250">
+<img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/5263fe1d-4102-4026-81b5-11f6a7d688d5" width="250">
+<img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/55f83e2e-a472-43ce-8cf2-c43197f80b6f" width="250">
+
