@@ -32,4 +32,6 @@ Para desarrollar esta aplicación, se utilizarán las siguientes tecnologías y 
 <img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/5e3922fa-8750-4108-a319-4103540d6114" width="250">
 <img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/5263fe1d-4102-4026-81b5-11f6a7d688d5" width="250">
 <img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/55f83e2e-a472-43ce-8cf2-c43197f80b6f" width="250">
+<img src="https://github.com/gasparsuarez/rickandmorty_app/assets/22453545/2e404f4d-1633-42e0-90e7-33b7616d9f38" width="250">
+
 
