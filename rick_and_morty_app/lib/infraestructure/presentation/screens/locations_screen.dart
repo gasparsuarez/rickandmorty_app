@@ -80,9 +80,8 @@ class _LocationsList extends StatelessWidget {
               final loc = state.list[index];
               return BounceInUp(
                   child: CustomCard(
+                type: CardType.location,
                 title: loc.name,
-                firstPropertyName: 'Tipo: ',
-                secondPropertyName: 'Dimensión: ',
                 firstPropertyValue: loc.type,
                 secondPropertyValue: loc.dimension,
                 residents: loc.residents,

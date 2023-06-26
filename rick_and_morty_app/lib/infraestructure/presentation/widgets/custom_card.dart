@@ -2,22 +2,25 @@ import 'package:flutter/material.dart';
 
 import 'dialogs/residents_dialog_view.dart';
 
+enum CardType {
+  location,
+  episode,
+}
+
 class CustomCard extends StatelessWidget {
   final String title;
-  final String firstPropertyName;
-  final String secondPropertyName;
   final String firstPropertyValue;
   final String secondPropertyValue;
   final List<String> residents;
+  final CardType type;
 
   const CustomCard(
       {super.key,
       required this.title,
-      required this.firstPropertyName,
-      required this.secondPropertyName,
       required this.firstPropertyValue,
       required this.secondPropertyValue,
-      required this.residents});
+      required this.residents,
+      required this.type});
 
   @override
   Widget build(BuildContext context) {
@@ -42,12 +45,12 @@ class CustomCard extends StatelessWidget {
                 const Divider(),
                 const SizedBox(height: 3),
                 Row(children: [
-                  Text(firstPropertyName),
+                  Text(type == CardType.episode ? 'Lanzamiento: ' : 'Tipo: '),
                   Text(firstPropertyValue, style: const TextStyle(color: Colors.greenAccent))
                 ]),
                 const SizedBox(height: 5),
                 Row(children: [
-                  Text(secondPropertyName),
+                  Text(type == CardType.episode ? 'Episodio: ' : 'Dimensión: '),
                   Flexible(
                       child: Text(secondPropertyValue,
                           style: const TextStyle(color: Colors.redAccent),
@@ -63,7 +66,7 @@ class CustomCard extends StatelessWidget {
                               context, _getResidentIdFromList(residents));
                         },
                         icon: const Icon(Icons.person_pin_circle_outlined),
-                        label: const Text('Habitantes')),
+                        label: Text(type == CardType.episode ? 'Personajes' : 'Habitantes')),
                   ],
                 )
               ],

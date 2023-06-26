@@ -80,11 +80,10 @@ class _EpisodesList extends StatelessWidget {
               return BounceInUp(
                 child: CustomCard(
                   title: ep.name,
-                  firstPropertyName: 'Lanzamiento: ',
-                  secondPropertyName: 'Episodio: ',
                   firstPropertyValue: formatDateToSpanish(ep.airDate),
                   secondPropertyValue: ep.episode,
                   residents: ep.characters,
+                  type: CardType.episode,
                 ),
               );
             },
