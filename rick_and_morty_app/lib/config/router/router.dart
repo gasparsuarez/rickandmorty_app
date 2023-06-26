@@ -21,5 +21,6 @@ class RouterApp {
               })
         ]),
     GoRoute(path: '/locations', builder: (context, state) => const LocationScreen()),
+    GoRoute(path: '/episodes', builder: (context, state) => const EpisodesScreen()),
   ]);
 }

@@ -1,5 +1,7 @@
 import 'package:injector/injector.dart';
+import 'package:rick_and_morty_app/application/use_cases/get_episodes_by_page_usecase_impl.dart';
 import 'package:rick_and_morty_app/application/use_cases/get_list_of_residents_usecase_impl.dart';
+import 'package:rick_and_morty_app/domain/use_cases/get_episodes_by_page_usecase.dart';
 import 'package:rick_and_morty_app/domain/use_cases/get_list_of_residents_usecase.dart';
 import 'package:rick_and_morty_app/domain/use_cases/get_locations_by_page_usecase.dart';
 
@@ -22,5 +24,7 @@ class UseCaseRegister {
         () => GetLocationsByPageUseCaseImpl(injector.get<IDataRepository>()));
     injector.registerDependency<GetListOfResidentsUseCase>(
         () => GetListOfResidentsUseCaseImpl(injector.get<IDataRepository>()));
+    injector.registerDependency<GetEpisodesByPageUseCase>(
+        () => GetEpisodesByPageUseCaseImpl(injector.get<IDataRepository>()));
   }
 }

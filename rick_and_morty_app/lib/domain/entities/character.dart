@@ -30,8 +30,8 @@ class Character extends Equatable {
         id: json["id"],
         name: json["name"],
         status: json["status"],
-        species: json["species"],
-        type: json["type"],
+        species: json["species"] ?? '',
+        type: json["type"] == "" ? 'Desconocido' : json["type"] ?? '',
         gender: json["gender"],
         origin: Origin.fromJson(json["origin"]),
         location: Location.fromJson(json["location"]),
@@ -51,7 +51,7 @@ class Origin extends Equatable {
   const Origin({required this.name, required this.url});
 
   factory Origin.fromJson(Map<String, dynamic> map) => Origin(
-        name: map['name'],
+        name: map['name'] == 'unknown' ? 'Desconocido' : map["name"],
         url: map['url'],
       );
 

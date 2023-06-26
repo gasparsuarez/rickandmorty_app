@@ -176,7 +176,7 @@ class _OriginCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final bool isUnknown = (origin == 'unknown') ? true : false;
+    final bool isUnknown = (origin == 'Desconocido') ? true : false;
     return SizedBox(
       width: size.width * 0.75,
       child: Card(
@@ -187,9 +187,7 @@ class _OriginCard extends StatelessWidget {
             children: [
               Text('Origen', style: Theme.of(context).textTheme.titleMedium),
               const Divider(),
-              TextButton(
-                  onPressed: isUnknown ? null : () {},
-                  child: Text(isUnknown ? 'Desconocido' : origin))
+              TextButton(onPressed: isUnknown ? null : () {}, child: Text(origin))
             ],
           ),
         ),
@@ -205,7 +203,7 @@ class _LocationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final bool isUnknown = (location == 'unknown') ? true : false;
+    final bool isUnknown = (location == 'Desconocido') ? true : false;
     return SizedBox(
       width: size.width * 0.75,
       child: Card(
@@ -216,9 +214,7 @@ class _LocationCard extends StatelessWidget {
             children: [
               Text('Localidad', style: Theme.of(context).textTheme.titleMedium),
               const Divider(),
-              TextButton(
-                  onPressed: isUnknown ? null : () {},
-                  child: Text(isUnknown ? 'Desconocido' : location))
+              TextButton(onPressed: isUnknown ? null : () {}, child: Text(location))
             ],
           ),
         ),

@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 
 import 'package:rick_and_morty_app/domain/entities/character.dart';
+import 'package:rick_and_morty_app/domain/entities/episode.dart';
 import 'package:rick_and_morty_app/domain/failures/api_exception.dart';
 import 'package:rick_and_morty_app/domain/repository/data_repository.dart';
 
@@ -70,6 +71,22 @@ class RickRepositoryImpl extends IDataRepository {
       }
     } catch (e) {
       throw ApiException('Failed to get residents, $e');
+    }
+  }
+
+  @override
+  Future<List<Episode>> getAllEpisodesByPage({int page = 1}) async {
+    try {
+      final response = await _dio.get('/episode', queryParameters: {'page': page});
+      if (response.statusCode == 200) {
+        final episodes =
+            (response.data["results"] as List).map((e) => Episode.fromJson(e)).toList();
+        return episodes;
+      } else {
+        throw ApiException('Failed to get episodes, code: ${response.statusCode}');
+      }
+    } catch (e) {
+      throw ApiException('Failed to get episodes, $e');
     }
   }
 }

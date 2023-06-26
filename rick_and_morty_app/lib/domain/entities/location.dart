@@ -21,12 +21,11 @@ class Location extends Equatable {
 
   factory Location.fromJson(Map<String, dynamic> json) => Location(
         id: json["id"] ?? 0,
-        name: json["name"] ?? '',
-        type: json["type"] ?? '',
+        name: json["name"] == 'unknown' ? 'Desconocido' : json["name"] ?? '',
+        type: json["type"] == 'unknown' ? 'Desconocido' : json["type"] ?? '',
         dimension: json["dimension"] == 'unknown' ? 'Desconocido' : json["dimension"] ?? '',
         url: json["url"] ?? '',
-        residents: json["residents"] != null
-            ? List<String>.from(json["residents"].map((e) => e.toString()))
-            : [],
+        residents:
+            json["residents"] != null ? List<String>.from(json["residents"].map((e) => e)) : [],
       );
 }

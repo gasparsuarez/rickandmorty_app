@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:rick_and_morty_app/infraestructure/presentation/widgets/character_box.dart';
 import 'package:rick_and_morty_app/infraestructure/presentation/widgets/widgets.dart';
 
-import '../../../application/blocs/residents_bloc/residents_bloc.dart';
+import '../../../../application/blocs/residents_bloc/residents_bloc.dart';
 
 class LocationResidentsDialog {
   static showResidentsDialog(BuildContext context, List<String> residents) {
