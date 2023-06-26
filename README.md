@@ -8,6 +8,8 @@ Esta aplicación de Rick & Morty tiene como objetivo proporcionar información d
 
   * Listado de todas las localidades con sus respectivos habitantes: La aplicación proporcionará una lista de todas las localidades presentes en la serie, junto con información sobre los habitantes que residen en cada una de ellas.
 
+ * Listado de todos los episodios con su respectiva descripción **En construcción** 
+
 ### Estructura 
 
 Para desarrollar esta aplicación, se utilizarán las siguientes tecnologías y enfoques:
@@ -17,6 +19,7 @@ Para desarrollar esta aplicación, se utilizarán las siguientes tecnologías y 
   * Inyección de dependencias.
   * Aplicación de principios S.O.L.I.D.
   * Arquitectura hexagonal con tecnicas de arquitectura limpia.
+  * **Testing** básico en diferentes funcionalidades con Mocktail.
 
 ### Información de la API
 
