@@ -14,11 +14,11 @@ Esta aplicación de Rick & Morty tiene como objetivo proporcionar información d
 
 Para desarrollar esta aplicación, se utilizarán las siguientes tecnologías y enfoques:
 
-  * Navegación con GoRouter.
+  * Navegación con **GoRouter**.
   * Patrón BLoC y Flutter Bloc.
   * Inyección de dependencias.
-  * Aplicación de principios S.O.L.I.D.
-  * Arquitectura hexagonal con tecnicas de arquitectura limpia.
+  * Aplicación de principios **S.O.L.I.D**.
+  * Arquitectura **hexagonal** con tecnicas de arquitectura limpia.
   * **Testing** básico en diferentes funcionalidades con Mocktail.
 
 ### Información de la API
