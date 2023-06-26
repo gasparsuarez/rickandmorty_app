@@ -19,7 +19,7 @@ Para desarrollar esta aplicación, se utilizarán las siguientes tecnologías y 
   * Inyección de dependencias.
   * Aplicación de principios **S.O.L.I.D**.
   * **Arquitectura Hexagonal** con técnicas de **arquitectura limpia**.
-  * **Testing** básico en diferentes funcionalidades con Mocktail.
+  * **Testing** básico en diferentes funcionalidades con **Mocktail**.
 
 ### Información de la API
 
