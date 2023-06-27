@@ -9,9 +9,8 @@ class GetCharacterByIdUseCaseImpl implements GetCharacterByIdUseCase {
   GetCharacterByIdUseCaseImpl(this._iDataRepository);
 
   @override
-  Future<Character> getCharacterById({int id = 1}) async {
+  Future<Character> getCharacterById({int id = 1}) {
     if (id <= 0) throw Exception('Character with id 0 doesnt exists');
-    final character = await _iDataRepository.getCharacterById(id: id);
-    return character;
+    return _iDataRepository.getCharacterById(id: id);
   }
 }

@@ -8,9 +8,8 @@ class GetLocationsByPageUseCaseImpl extends GetLocationsByPageUseCase {
   GetLocationsByPageUseCaseImpl(this._dataRepository);
 
   @override
-  Future<List<Location>> getLocationsByPage({int page = 1}) async {
+  Future<List<Location>> getLocationsByPage({int page = 1}) {
     if (page <= 0) throw Exception('Error page 0 not found.');
-    final locations = await _dataRepository.getAllLocationsByPage(page: page);
-    return locations;
+    return _dataRepository.getAllLocationsByPage(page: page);
   }
 }

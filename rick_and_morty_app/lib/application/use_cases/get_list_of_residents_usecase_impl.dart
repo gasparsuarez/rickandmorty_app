@@ -10,7 +10,6 @@ class GetListOfResidentsUseCaseImpl implements GetListOfResidentsUseCase {
   @override
   Future<List<Character>> getListOfResidents(List<String> ids) async {
     if (ids.isEmpty) return [];
-    final characters = await _dataRepository.getListOfResidents(ids);
-    return characters;
+    return _dataRepository.getListOfResidents(ids);
   }
 }

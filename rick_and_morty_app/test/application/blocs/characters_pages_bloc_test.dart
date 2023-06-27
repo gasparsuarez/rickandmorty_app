@@ -2,11 +2,11 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:rick_and_morty_app/application/blocs/characters_pages_bloc/data_bloc.dart';
+import 'package:rick_and_morty_app/application/use_cases/get_characters_by_page_usecase_impl.dart';
 import 'package:rick_and_morty_app/domain/entities/character.dart';
 import 'package:rick_and_morty_app/domain/failures/api_exception.dart';
-import 'package:rick_and_morty_app/domain/use_cases/get_characters_by_page_usecase.dart';
 
-class MockGetAllCharacters extends Mock implements GetCharactersByPageUseCase {}
+class MockGetAllCharacters extends Mock implements GetCharactersByPageUseCaseImpl {}
 
 void main() {
   group('GetCharactersByPage Bloc ->', () {
@@ -624,10 +624,11 @@ void main() {
       act: (bloc) => bloc.add(LoadPageEvent(page: 1)),
       expect: () => [isA<DataLoadingState>(), isA<DataLoadedState>()],
     );
+
     blocTest(
       'Emit [DataLoadingState, DataErrorState] when unsuccessful',
       build: () {
-        when(() => mockGetAllCharacters.getAllCharactersByPage(page: 1)).thenThrow(ApiException);
+        when(() => mockGetAllCharacters.getAllCharactersByPage(page: 0)).thenThrow(ApiException);
         return dataBloc;
       },
       act: (bloc) => bloc.add(LoadPageEvent(page: 1)),

@@ -8,9 +8,8 @@ class GetCharactersByPageUseCaseImpl extends GetCharactersByPageUseCase {
   GetCharactersByPageUseCaseImpl(this._iDataRepository);
 
   @override
-  Future<List<Character>> getAllCharactersByPage({int page = 1}) async {
+  Future<List<Character>> getAllCharactersByPage({int page = 1}) {
     if (page <= 0) throw Exception('Error page 0 not found.');
-    final list = await _iDataRepository.getAllCharactersByPage(page: page);
-    return list;
+    return _iDataRepository.getAllCharactersByPage(page: page);
   }
 }

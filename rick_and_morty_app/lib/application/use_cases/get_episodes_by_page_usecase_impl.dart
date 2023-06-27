@@ -8,9 +8,8 @@ class GetEpisodesByPageUseCaseImpl extends GetEpisodesByPageUseCase {
   GetEpisodesByPageUseCaseImpl(this._iDataRepository);
 
   @override
-  Future<List<Episode>> getAllEpisodesByPageUseCase({int page = 1}) async {
+  Future<List<Episode>> getAllEpisodesByPageUseCase({int page = 1}) {
     if (page <= 0) throw Exception('Error page 0 not found.');
-    final result = await _iDataRepository.getAllEpisodesByPage(page: page);
-    return result;
+    return _iDataRepository.getAllEpisodesByPage(page: page);
   }
 }
