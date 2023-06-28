@@ -18,7 +18,7 @@ class DataBloc extends Bloc<DataEvent, DataState> {
             await _getCharactersByPageUseCase.getAllCharactersByPage(page: event.page);
         emit(DataLoadedState(list: characters, page: event.page));
       } catch (e) {
-        emit(DataErrorState(error: 'Error al cargar los datos'));
+        emit(DataErrorState(error: e.toString()));
       }
     });
   }

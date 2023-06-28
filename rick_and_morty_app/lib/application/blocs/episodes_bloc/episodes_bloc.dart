@@ -16,7 +16,7 @@ class EpisodesBloc extends Bloc<EpisodesEvent, EpisodesState> {
         final list = await _getEpisodesByPageUseCase.getAllEpisodesByPageUseCase(page: event.page);
         emit(LoadedEpisodesState(list: list));
       } catch (e) {
-        emit(const ErrorEpisodesState('Error al cargar los datos'));
+        emit(ErrorEpisodesState(e.toString()));
       }
     });
   }

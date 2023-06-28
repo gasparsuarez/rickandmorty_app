@@ -10,7 +10,6 @@ String formatDateToSpanish(String dateStr) {
 
     return formattedDate;
   } catch (e) {
-    print('Error al formatear la fecha: $e');
     return dateStr;
   }
 }

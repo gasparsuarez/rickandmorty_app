@@ -9,7 +9,11 @@ class CustomDataErrorWidget extends StatelessWidget {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [const Icon(Icons.error_outline, size: 28, color: Colors.orange), Text(error)],
+        children: [
+          const Icon(Icons.error_outline, size: 28, color: Colors.orange),
+          Text(error),
+          const SizedBox(height: 5),
+        ],
       ),
     );
   }

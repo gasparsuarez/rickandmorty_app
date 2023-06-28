@@ -1248,7 +1248,7 @@ void main() {
     });
 
     test('Error 404 when the page limit is exceeded', () {
-      const path = '/character?page=45';
+      const path = '/character?page=2';
       expect(() async => await dio.get(path), throwsA(isA<DioException>()));
     });
   });

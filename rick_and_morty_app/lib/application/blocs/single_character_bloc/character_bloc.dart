@@ -16,7 +16,7 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
         final character = await _getCharacterByIdUseCase.getCharacterById(id: int.parse(event.id));
         emit(CharacterLoadedState(character));
       } catch (e) {
-        emit(CharacterErrorState(error: 'Error al cargar los datos'));
+        emit(CharacterErrorState(error: e.toString()));
       }
     });
   }

@@ -16,7 +16,7 @@ class ResidentsBloc extends Bloc<ResidentsEvent, ResidentsState> {
         final residents = await _getListOfResidentsUseCase.getListOfResidents(event.ids);
         emit(LoadedResidentsState(list: residents));
       } catch (e) {
-        emit(const ErrorResidentsState('Error al cargar los datos'));
+        emit(ErrorResidentsState(e.toString()));
       }
     });
   }
