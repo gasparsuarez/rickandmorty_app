@@ -8,7 +8,7 @@ Esta aplicación de Rick & Morty tiene como objetivo proporcionar información d
 
   * Listado de todas las localidades con sus respectivos habitantes: La aplicación proporcionará una lista de todas las localidades presentes en la serie, junto con información sobre los habitantes que residen en cada una de ellas.
 
- * Listado de todos los episodios con su respectiva descripción (**En construcción**) 
+ * Listado de todos los episodios con su respectiva descripción y personajes que aparecen en ellos.
 
 ### Estructura 
 
