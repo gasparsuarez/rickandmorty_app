@@ -1,4 +1,4 @@
-### Aplicación de Rick & Morty (En construcción)
+### Aplicación de Rick & Morty
 
 Esta aplicación de Rick & Morty tiene como objetivo proporcionar información detallada sobre los personajes y las localidades presentes en la serie. Las características principales de la aplicación incluyen:
 
